@@ -6,13 +6,13 @@ import java.io.IOException;
 public class main {
     public static void main(String[] args) throws FileNotFoundException, IOException {
         
-        String txt="𐒁𐒛𐒄𐒀𐒘 𐒖𐒁𐒂𐒘 𐒜 𐒗𐒒𐒗𐒌𐒖𐒆𐒛 𐒝 𐒙𐒌𐒙𐒐𐒖𐒓 𐒅 𐒊 𐒉";        
+        String txt="mustafaa abshir xoodiyee";        
         
         Convert toOsmanya= new Convert(txt);
         String convertedText= toOsmanya.stringToChars();
 
         writeUsingFileWriter(convertedText);
-        System.out.println("letter a was converted to " + convertedText);
+        System.out.println("Your text is converted to " + convertedText);
     }
 
     private static void writeUsingFileWriter(String convertedText) {

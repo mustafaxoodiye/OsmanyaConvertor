@@ -54,12 +54,12 @@ public class Convert {
 
             if(letter.equals(s)){
                 int result=i+1;
-                System.out.println("I found it in line " + result);           
+                System.out.println("I found the letter " + letter + " in line " + result);           
                 convertedChar=inWords[1];  
             } 
-            else{
-                System.out.println("not equal, the char is " + letter + " and the s is " + s);
-            }
+            // else{
+            //     System.out.println("not equal, the char is " + letter + " and the s is " + s);
+            // }
         }
         return convertedChar;
     }
@@ -97,23 +97,23 @@ public class Convert {
 
     public String polishing(String convertedText)
     {
-        if(convertedText.contains("ð’–ð’–")){ //aa
-            convertedText= convertedText.replace("ð’–ð’–", "ð’›");
+        if(convertedText.contains("𐒖𐒖")){ //aa
+            convertedText= convertedText.replace("𐒖𐒖", "𐒛");
         }
-        if(convertedText.contains("ð’—ð’—")){//ee
-            convertedText= convertedText.replace("ð’—ð’—", "ð’œ");
+        if(convertedText.contains("𐒗𐒗")){//ee
+            convertedText= convertedText.replace("𐒗𐒗", "𐒜");
         }
-        if(convertedText.contains("ð’™ð’™")){//oo
-            convertedText= convertedText.replace("ð’™ð’™", "ð’");
+        if(convertedText.contains("𐒙𐒙")){//oo
+            convertedText= convertedText.replace("𐒙𐒙", "𐒝");
         }
-        if(convertedText.contains("ð’ð’”")){//kh
-            convertedText= convertedText.replace("ð’ð’”", "ð’…");
+        if(convertedText.contains("𐒏𐒔")){//kh
+            convertedText= convertedText.replace("𐒏𐒔", "𐒅");
         }
-        if(convertedText.contains("ð’†ð’”")){//dh
-            convertedText= convertedText.replace("ð’†ð’”", "ð’Š");
+        if(convertedText.contains("𐒆𐒔")){//dh
+            convertedText= convertedText.replace("𐒆𐒔", "𐒊");
         }
-        if(convertedText.contains("ð’ˆð’”")){//sh
-            convertedText= convertedText.replace("ð’ˆð’”", "ð’‰");
+        if(convertedText.contains("𐒈𐒔")){//sh
+            convertedText= convertedText.replace("𐒈𐒔", "𐒉");
         }
 
         return convertedText;
