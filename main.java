@@ -6,7 +6,7 @@ import java.io.IOException;
 public class main {
     public static void main(String[] args) throws FileNotFoundException, IOException {
         
-        String txt="baax'i abti ee enegadaa oo ogolaw kh dh sh";        
+        String txt="𐒁𐒛𐒄𐒀𐒘 𐒖𐒁𐒂𐒘 𐒜 𐒗𐒒𐒗𐒌𐒖𐒆𐒛 𐒝 𐒙𐒌𐒙𐒐𐒖𐒓 𐒅 𐒊 𐒉";        
         
         Convert toOsmanya= new Convert(txt);
         String convertedText= toOsmanya.stringToChars();
@@ -16,10 +16,10 @@ public class main {
     }
 
     private static void writeUsingFileWriter(String convertedText) {
-        File file = new File("C:/Users/User/Desktop/Python/Java/output.txt");
+        File file = new File("C:/Users/User/Desktop/Java/OsmanyaConvertor/output.txt");
         FileWriter fr = null;
         try {
-            fr = new FileWriter(file);
+            fr = new FileWriter(file, false);
             fr.write(convertedText);
         } catch (IOException e) {
             e.printStackTrace();

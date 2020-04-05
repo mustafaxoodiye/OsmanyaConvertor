@@ -37,7 +37,7 @@ public class Convert {
     {
         String s=Character.toString(c);
         String convertedChar="";
-        File f = new File("C:/Users/User/Desktop/Python/Java/data.txt");
+        File f = new File("C:/Users/User/Desktop/Java/OsmanyaConvertor/data.txt");
         Scanner in = new Scanner(f);
 
         ArrayList<String> inLines = new ArrayList<>();
@@ -57,9 +57,9 @@ public class Convert {
                 System.out.println("I found it in line " + result);           
                 convertedChar=inWords[1];  
             } 
-            // else{
-            //     System.out.println("not equal, the char is " + letter + " and the s is " + s);
-            // }
+            else{
+                System.out.println("not equal, the char is " + letter + " and the s is " + s);
+            }
         }
         return convertedChar;
     }
@@ -68,7 +68,7 @@ public class Convert {
     {
         String s=Character.toString(c);
         String convertedChar="";
-        File f = new File("C:/Users/User/Desktop/Python/Java/data.txt");
+        File f = new File("C:/Users/User/Desktop/Java/OsmanyaConvertor/data.txt");
         Scanner in = new Scanner(f);
 
         ArrayList<String> inLines = new ArrayList<>();
